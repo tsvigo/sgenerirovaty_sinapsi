@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    const size_t numberCount = 10105;
+    const size_t numberCount = 10305; //10105;
     const QString fileName
         = "/home/viktor/my_projects_qt_2/sgenerirovaty_sinapsi/random_sinapsi.bin"; // Имя бинарного файла
 
