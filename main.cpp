@@ -72,7 +72,7 @@ int main(int argc, char *argv[])
 {
     QCoreApplication a(argc, argv);
 
-    const size_t numberCount = 10305; //10105;
+    const size_t numberCount = 10106;//10305; //10105;
     const QString fileName
         = "/home/viktor/my_projects_qt_2/sgenerirovaty_sinapsi/random_sinapsi.bin"; // Имя бинарного файла
 
@@ -93,10 +93,11 @@ int main(int argc, char *argv[])
         std::cerr << "Numbers were not written or read correctly." << std::endl;
         return 1;
     }
-
+    int i=-1;
     // Вывод чисел в консоль по числу на строку
     for (const auto &number : readNumbers) {
-        std::cout << number << std::endl;
+        i++;
+        std::cout <<i << ": "<< number << std::endl;
     }
 
     return 0;
